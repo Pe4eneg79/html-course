@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+.container {
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+.article-img {
+    max-width: 80%;
+    margin: 0 auto;
+    /*вопрос: почему не получается использовать тот же параметр margin из стиля .container путем присвоения этого класса картинкам как дополнителього (типа <p class="img-discription container">)?*/
+    display: block;
+}
+.heading {
+    font-family: Impact, sans-serif;
+    text-align: center;
+    margin: 40px 0;
+}
+p, ul, li /*добавил элементы li в общий стиль страницы, поскольку вынесение margin-bottom для них в отдельный элемент противоречит принципу DRY*/ 
+{
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;/*растянул текст по ширине страницы для лучшей читаемости*/
+    margin-bottom: 20px;
+    font-family: Arial, serif;
+}
+.img-discription {
+    font-size: 16px;/*сделал размер шрифта подписи чуть меньше основного для лучшей читаемости. общее правило уточняю за счет приоритета записи в таблице стилей*/
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+.text-red {
+    color: red;
+}
+.bold {
+    font-weight: 800;
+}

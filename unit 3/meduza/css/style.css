@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    }
+.container { /*вопрос: к какому элементу лучше применять стили, к <div.container> или <article>. или же не принципиально?*/
+    padding: 20px;/*использовал для реализации отступа div.category. без этого надпись влипала в край div.contayner. вопрос: почему не срабатывал margin-top для div.category?*/
+    border-radius: 20px;
+    max-width: 1000px; /*вопрос: какую ширину все же лучше использовать, 1024 рх или 1000?*/
+    background-color: rgb(41, 41, 41); /*вопрос: что лучше использовать при верстке подобных страниц, другой цвет или применение прозрачности к уже имеющемуся цвету бекграунда?*/
+    margin: 50px auto;
+    }
+.timecode {
+        font-size: 10px;
+    }
+.image {
+    max-width: 90%;
+    margin: 30px auto;
+    display: block;/*вопрос: есть ли смысл вынести этот параметр в блок обнуления стилей, если мы все равно его применяем постоянно к картинкам?*/
+}
+h1 {
+    max-width: 70%;
+    margin: 0 auto 30px;
+    }
+p {
+    max-width: 80%;
+    line-height: 150%;
+    text-align: justify;/*применил для лучшей читаемости*/
+    margin: 0 auto 30px;
+}
+.category {
+    color: rgb(255, 161, 79);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+.tag {
+    display: block;
+    font-size: 12px;
+    margin-top: 50px;     
+}
+.text-gray {
+    color: rgb(121, 121, 121);
+}
